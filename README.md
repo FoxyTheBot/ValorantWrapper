@@ -23,7 +23,7 @@ dependencies {
 
 - Kotlin: 2.0.0 or latest
 - Java 21 or latest
-- Ktor 3.0.1 or latest
+- Ktor 3.0.3 or latest
 
 ## 🚀 Features
 
@@ -36,7 +36,7 @@ dependencies {
 ### 1. Get User Information by UserTag
 
 ```kotlin
-suspend fun getUserByTag(userTag: String): UserInfo
+suspend fun getUserByTag(userTag: String): ValorantUser
 ```
 
 Example:
@@ -50,7 +50,7 @@ println(userInfo)
 ### 2. Get MMR by UserTag
 
 ```kotlin
-suspend fun getMMRByTag(userTag: String, region: String): MMRInfo
+suspend fun getMmrByTag(userTag: String, region: String): MmrInfo
 ```
 
 Example:
@@ -58,7 +58,7 @@ Example:
 ```kotlin
 val region = "na"
 val userTag = "username#1234"
-val mmrInfo = wrapper.getMMRByTag(userTag, region)
+val mmrInfo = wrapper.getMmrByTag(userTag, region)
 println(mmrInfo)
 ```
 
@@ -76,10 +76,6 @@ val matchId = "someMatchId"
 val matchInfo = wrapper.getMatchById(matchId, region)
 println(matchInfo)
 ```
-
-## ⚙️ Configuration
-
-By default, the API uses the endpoint provided by the [Unofficial VALORANT API](https://github.com/Henrik-3/unofficial-valorant-api). If you need to configure the base URL or any other settings, you can modify the `HttpProvider` class accordingly.
 
 ## ❓ Npm version when?
 Never :3
