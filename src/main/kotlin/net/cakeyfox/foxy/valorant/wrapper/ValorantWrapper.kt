@@ -1,12 +1,15 @@
+@file:Suppress("unused")
+
 package net.cakeyfox.foxy.valorant.wrapper
 
-import net.cakeyfox.foxy.valorant.wrapper.core.HttpProvider
+import net.cakeyfox.foxy.valorant.wrapper.user.Match
 import net.cakeyfox.foxy.valorant.wrapper.user.User
+import net.cakeyfox.foxy.valorant.wrapper.utils.Endpoints
+import net.cakeyfox.foxy.valorant.wrapper.utils.Utils
 
 class ValorantWrapper(token: String) {
-    val client = HttpProvider()
-
     val user = User(token)
-    // TODO: Create "Match" class and data classes
-    // Reference: https://docs.henrikdev.xyz/valorant/changes/v4.0.0
+    val match = Match(token)
+    val utils = Utils
+    val endpoints = Endpoints
 }

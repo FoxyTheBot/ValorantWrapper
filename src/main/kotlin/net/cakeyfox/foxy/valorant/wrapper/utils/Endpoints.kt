@@ -19,7 +19,7 @@ object Endpoints {
     /* Match endpoints */
     // https://docs.henrikdev.xyz/valorant/changes/v4.0.0#endpoint-matches
 
-    const val GET_MATCH_BY_ID = "$BASE_URL/valorant/v4/match/{region}/{platform}/{id}"
+    const val GET_MATCH_BY_ID = "$BASE_URL/valorant/v4/match/{region}/{id}"
     const val GET_MATCHES_BY_USERTAG = "$BASE_URL/valorant/v4/matches/{region}/{platform}/{name}/{tag}"
     const val GET_MATCHES_BY_UUID = "$BASE_URL/valorant/v4/by-puuid/matches/{region}/{platform}/{puuid}"
 }
