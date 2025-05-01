@@ -8,7 +8,7 @@ import io.ktor.client.request.*
 import io.ktor.serialization.kotlinx.json.*
 import kotlinx.serialization.json.Json
 
-class HttpProvider {
+object HttpProvider {
     val client = HttpClient(CIO) {
         install(ContentNegotiation) {
             json(Json {
@@ -26,8 +26,12 @@ class HttpProvider {
         return updatedUrl
     }
 
-    suspend inline fun <reified T> get(url: String, headers: Map<String, String> = emptyMap()): T {
-        val updatedUrl = replaceUrlParams(url, headers)
+    suspend inline fun <reified T> get(
+        url: String,
+        urlParams: Map<String, String> = emptyMap(),
+        headers: Map<String, String> = emptyMap()
+    ): T {
+        val updatedUrl = replaceUrlParams(url, urlParams)
         return client.get(updatedUrl) {
             headers.forEach { (key, value) ->
                 header(key, value)

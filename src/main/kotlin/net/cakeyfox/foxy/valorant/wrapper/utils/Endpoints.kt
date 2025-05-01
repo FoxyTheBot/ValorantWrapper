@@ -1,4 +1,4 @@
-package dev.usuario.foxy
+package net.cakeyfox.foxy.valorant.wrapper.utils
 
 object Endpoints {
 
@@ -8,7 +8,7 @@ object Endpoints {
     // https://docs.henrikdev.xyz/valorant/changes/v4.0.0#endpoint-account
 
     const val GET_USER_BY_USERTAG = "$BASE_URL/valorant/v2/account/{name}/{tag}"
-    const val GET_USER_BY_UUID = "$BASE_URL/valorant/by-puuid/v2/account/{uuid}"
+    const val GET_USER_BY_UUID = "$BASE_URL/valorant/by-puuid/v2/account/{puuid}"
 
     /* User MMR endpoints */
     // https://docs.henrikdev.xyz/valorant/changes/v4.0.0#endpoint-matches

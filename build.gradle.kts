@@ -37,7 +37,7 @@ publishing {
                 licenses {
                     license {
                         name.set("AGPL-3.0 License")
-                        url.set("https://opensource.org/licenses/MIT")
+                        url.set("https://opensource.org/licenses/AGPL-3.0")
                     }
                 }
 
