@@ -23,7 +23,7 @@ dependencies {
 
 - Kotlin: 2.0.0 or latest
 - Java 21 or latest
-- Ktor 3.0.1 or latest
+- Ktor 3.0.3 or latest
 
 ## 🚀 Features
 
