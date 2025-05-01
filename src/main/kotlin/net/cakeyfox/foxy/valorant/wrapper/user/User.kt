@@ -3,8 +3,8 @@
 package net.cakeyfox.foxy.valorant.wrapper.user
 
 import net.cakeyfox.foxy.valorant.wrapper.core.HttpProvider
-import net.cakeyfox.foxy.valorant.wrapper.models.MmrData
-import net.cakeyfox.foxy.valorant.wrapper.models.ValorantUser
+import net.cakeyfox.foxy.valorant.wrapper.user.models.MmrData
+import net.cakeyfox.foxy.valorant.wrapper.user.models.ValorantUser
 import net.cakeyfox.foxy.valorant.wrapper.utils.Endpoints
 import net.cakeyfox.foxy.valorant.wrapper.utils.Utils
 

@@ -8,8 +8,8 @@ import io.ktor.client.request.*
 import io.ktor.client.statement.*
 import io.ktor.serialization.kotlinx.json.*
 import kotlinx.serialization.json.Json
-import net.cakeyfox.foxy.valorant.wrapper.models.ApiError
-import net.cakeyfox.foxy.valorant.wrapper.models.ApiErrorResponse
+import net.cakeyfox.foxy.valorant.wrapper.utils.ApiError
+import net.cakeyfox.foxy.valorant.wrapper.utils.ApiErrorResponse
 import net.cakeyfox.foxy.valorant.wrapper.utils.ApiException
 
 object HttpProvider {

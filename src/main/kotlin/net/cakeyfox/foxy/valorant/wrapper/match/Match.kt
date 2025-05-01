@@ -1,9 +1,9 @@
 @file:Suppress("unused")
 
-package net.cakeyfox.foxy.valorant.wrapper.user
+package net.cakeyfox.foxy.valorant.wrapper.match
 
 import net.cakeyfox.foxy.valorant.wrapper.core.HttpProvider
-import net.cakeyfox.foxy.valorant.wrapper.models.MatchInfo
+import net.cakeyfox.foxy.valorant.wrapper.match.models.MatchInfo
 import net.cakeyfox.foxy.valorant.wrapper.utils.Endpoints
 import net.cakeyfox.foxy.valorant.wrapper.utils.Utils
 

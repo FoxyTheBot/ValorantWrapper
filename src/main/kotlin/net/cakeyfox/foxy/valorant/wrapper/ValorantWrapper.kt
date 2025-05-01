@@ -2,7 +2,7 @@
 
 package net.cakeyfox.foxy.valorant.wrapper
 
-import net.cakeyfox.foxy.valorant.wrapper.user.Match
+import net.cakeyfox.foxy.valorant.wrapper.match.Match
 import net.cakeyfox.foxy.valorant.wrapper.user.User
 import net.cakeyfox.foxy.valorant.wrapper.utils.Endpoints
 import net.cakeyfox.foxy.valorant.wrapper.utils.Utils

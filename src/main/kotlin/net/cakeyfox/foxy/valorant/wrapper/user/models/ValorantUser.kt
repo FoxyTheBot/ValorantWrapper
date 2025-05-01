@@ -1,4 +1,4 @@
-package net.cakeyfox.foxy.valorant.wrapper.models
+package net.cakeyfox.foxy.valorant.wrapper.user.models
 
 import kotlinx.serialization.SerialName
 
