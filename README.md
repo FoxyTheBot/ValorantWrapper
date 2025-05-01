@@ -36,7 +36,7 @@ dependencies {
 ### 1. Get User Information by UserTag
 
 ```kotlin
-suspend fun getUserByTag(userTag: String): UserInfo
+suspend fun getUserByTag(userTag: String): ValorantUser
 ```
 
 Example:
@@ -50,7 +50,7 @@ println(userInfo)
 ### 2. Get MMR by UserTag
 
 ```kotlin
-suspend fun getMMRByTag(userTag: String, region: String): MMRInfo
+suspend fun getMmrByTag(userTag: String, region: String): MmrInfo
 ```
 
 Example:
@@ -58,7 +58,7 @@ Example:
 ```kotlin
 val region = "na"
 val userTag = "username#1234"
-val mmrInfo = wrapper.getMMRByTag(userTag, region)
+val mmrInfo = wrapper.getMmrByTag(userTag, region)
 println(mmrInfo)
 ```
 
