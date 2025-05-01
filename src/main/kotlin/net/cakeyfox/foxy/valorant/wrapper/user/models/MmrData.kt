@@ -18,16 +18,16 @@ data class MmrData(
         @kotlinx.serialization.Serializable
         data class CurrentInfo(
             val tier: Tier,
-            val rr: Int,
+            val rr: Int? = 0,
             @SerialName("last_change")
-            val lastChange: Int,
-            val elo: Int
+            val lastChange: Int? = 0,
+            val elo: Int? = 0
         )
         @kotlinx.serialization.Serializable
         data class Peak(
             val season: Season,
             @SerialName("ranking_schema")
-            val rankingSchema: String,
+            val rankingSchema: String? = null,
             val tier: Tier
         )
     }

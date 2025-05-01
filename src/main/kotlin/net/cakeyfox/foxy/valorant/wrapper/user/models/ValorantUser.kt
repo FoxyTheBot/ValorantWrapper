@@ -10,13 +10,13 @@ data class ValorantUser(
     @kotlinx.serialization.Serializable
     data class UserData(
         val puuid: String,
-        val region: String,
+        val region: String? = "na",
         @SerialName("account_level")
-        val accountLevel: Long,
+        val accountLevel: Long? = 0,
         val name: String,
         val tag: String,
         val card: String,
-        val title: String,
-        val platforms: List<String>
+        val title: String? = null,
+        val platforms: List<String>? = emptyList()
     )
 }

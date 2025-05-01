@@ -35,7 +35,7 @@ data class MatchInfo(
                 val name: String,
                 val tag: String,
                 @SerialName("team_id")
-                val teamId: String,
+                val teamId: String? = null,
                 val platform: String,
                 val agent: Agent,
                 val stats: Stats,
