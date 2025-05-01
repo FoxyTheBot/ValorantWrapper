@@ -1,6 +1,9 @@
 # 🦊 ValorantWrapper
 
-This is a Kotlin wrapper for the [Unofficial VALORANT API](https://github.com/Henrik-3/unofficial-valorant-api), designed to make interacting with VALORANT data easy and efficient. This library is also used internally in the [Foxy](https://github.com/FoxyTheBot/Foxy) project.
+A simple [Unofficial VALORANT API](https://github.com/Henrik-3/unofficial-valorant-api) wrapper written in Kotlin
+
+## ❓ Can I use?
+Yes, you can use this wrapper! Just follow the installation instructions.
 
 ## 📦 Installation
 
@@ -12,16 +15,15 @@ repositories {
 }
 
 dependencies {
-    implementation("com.github.FoxyTheBot:ValorantWrapper:1.0.0")
+    implementation("com.github.FoxyTheBot:ValorantWrapper:VERSION")
 }
 ```
 
-> Replace `1.0.0` with the version you need.
-
 ## 🔧 Requirements
 
-- Kotlin: 2.0.0
-- Java 21
+- Kotlin: 2.0.0 or latest
+- Java 21 or latest
+- Ktor 3.0.1 or latest
 
 ## 🚀 Features
 
@@ -79,6 +81,5 @@ println(matchInfo)
 
 By default, the API uses the endpoint provided by the [Unofficial VALORANT API](https://github.com/Henrik-3/unofficial-valorant-api). If you need to configure the base URL or any other settings, you can modify the `HttpProvider` class accordingly.
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## ❓ Npm version when?
+Never :3
