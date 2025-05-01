@@ -32,7 +32,7 @@ class User(token: String) {
             "name" to user.name,
             "tag" to user.tag,
             "region" to region,
-            "platform" to platform
+            "platform" to platform.uppercase()
         )
 
         return HttpProvider.get(url, params, headers)
@@ -43,7 +43,7 @@ class User(token: String) {
         val params = mapOf(
             "puuid" to puuid,
             "region" to region,
-            "platform" to platform
+            "platform" to platform.uppercase()
         )
 
         return HttpProvider.get(url, params, headers)

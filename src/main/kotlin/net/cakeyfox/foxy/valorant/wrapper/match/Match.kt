@@ -5,7 +5,6 @@ package net.cakeyfox.foxy.valorant.wrapper.match
 import net.cakeyfox.foxy.valorant.wrapper.core.HttpProvider
 import net.cakeyfox.foxy.valorant.wrapper.match.models.MatchInfo
 import net.cakeyfox.foxy.valorant.wrapper.utils.Endpoints
-import net.cakeyfox.foxy.valorant.wrapper.utils.Utils
 
 class Match(token: String) {
     private val headers = mapOf("Authorization" to token)
@@ -20,7 +19,7 @@ class Match(token: String) {
         return HttpProvider.get(url, params, headers)
     }
 
-    // TODO: Implement this
+    // TODO: Create a data class for this method
 //    suspend fun getMatchesByUserTag(userTag: String, region: String, platform: String): Any {
 //        val url = Endpoints.GET_MATCHES_BY_USERTAG
 //        val user = Utils.formatUserTag(userTag)
@@ -33,4 +32,15 @@ class Match(token: String) {
 //
 //        return HttpProvider.get(url, params, headers)
 //    }
+
+    suspend fun getMatchesByUuid(puuid: String, region: String, platform: String): Any {
+        val url = Endpoints.GET_MMR_BY_UUID
+        val params = mapOf(
+            "puuid" to puuid,
+            "region" to region,
+            "platform" to platform.uppercase()
+        )
+
+        return HttpProvider.get(url, params, headers)
+    }
 }
