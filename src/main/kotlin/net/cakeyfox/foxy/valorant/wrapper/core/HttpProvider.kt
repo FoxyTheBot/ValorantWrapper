@@ -59,6 +59,7 @@ object HttpProvider {
             throw ApiException(apiError)
         }
     }
+
     fun close() {
         client.close()
     }
