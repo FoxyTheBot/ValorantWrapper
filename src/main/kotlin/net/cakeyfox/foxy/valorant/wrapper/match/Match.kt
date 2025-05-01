@@ -19,7 +19,7 @@ class Match(token: String) {
         return HttpProvider.get(url, params, headers)
     }
 
-    // TODO: Create a data class for this method
+    // TODO: Create a data class for these methods
 //    suspend fun getMatchesByUserTag(userTag: String, region: String, platform: String): Any {
 //        val url = Endpoints.GET_MATCHES_BY_USERTAG
 //        val user = Utils.formatUserTag(userTag)
@@ -33,14 +33,14 @@ class Match(token: String) {
 //        return HttpProvider.get(url, params, headers)
 //    }
 
-    suspend fun getMatchesByUuid(puuid: String, region: String, platform: String): Any {
-        val url = Endpoints.GET_MMR_BY_UUID
-        val params = mapOf(
-            "puuid" to puuid,
-            "region" to region,
-            "platform" to platform.uppercase()
-        )
-
-        return HttpProvider.get(url, params, headers)
-    }
+//    suspend fun getMatchesByUuid(puuid: String, region: String, platform: String): Any {
+//        val url = Endpoints.GET_MATCHES_BY_UUID
+//        val params = mapOf(
+//            "puuid" to puuid,
+//            "region" to region,
+//            "platform" to platform.uppercase()
+//        )
+//
+//        return HttpProvider.get(url, params, headers)
+//    }
 }
