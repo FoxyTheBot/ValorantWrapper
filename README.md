@@ -77,9 +77,5 @@ val matchInfo = wrapper.getMatchById(matchId, region)
 println(matchInfo)
 ```
 
-## ⚙️ Configuration
-
-By default, the API uses the endpoint provided by the [Unofficial VALORANT API](https://github.com/Henrik-3/unofficial-valorant-api). If you need to configure the base URL or any other settings, you can modify the `HttpProvider` class accordingly.
-
 ## ❓ Npm version when?
 Never :3
