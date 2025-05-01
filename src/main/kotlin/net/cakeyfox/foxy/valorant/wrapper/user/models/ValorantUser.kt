@@ -2,10 +2,12 @@ package net.cakeyfox.foxy.valorant.wrapper.user.models
 
 import kotlinx.serialization.SerialName
 
+@kotlinx.serialization.Serializable
 data class ValorantUser(
     val status: Int,
     val data: UserData
 ) {
+    @kotlinx.serialization.Serializable
     data class UserData(
         val puuid: String,
         val region: String,

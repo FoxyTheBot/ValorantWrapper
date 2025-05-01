@@ -9,7 +9,7 @@ import net.cakeyfox.foxy.valorant.wrapper.utils.Endpoints
 import net.cakeyfox.foxy.valorant.wrapper.utils.Utils
 
 class User(token: String) {
-    private val headers = mapOf("Authorization" to "Bearer $token")
+    private val headers = mapOf("Authorization" to token)
 
     suspend fun getUserByTag(userTag: String): ValorantUser {
         val user = Utils.formatUserTag(userTag)

@@ -8,7 +8,7 @@ import net.cakeyfox.foxy.valorant.wrapper.utils.Endpoints
 import net.cakeyfox.foxy.valorant.wrapper.utils.Utils
 
 class Match(token: String) {
-    private val headers = mapOf("Authorization" to "Bearer $token")
+    private val headers = mapOf("Authorization" to token)
 
     suspend fun getMatchById(matchId: String, region: String): MatchInfo {
         val url = Endpoints.GET_MATCH_BY_ID
