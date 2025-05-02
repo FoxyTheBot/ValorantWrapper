@@ -1,12 +1,12 @@
 @file:Suppress("unused")
 
-package net.cakeyfox.foxy.valorant.wrapper.match
+package com.wing4merbr.valorant.wrapper.match
 
-import net.cakeyfox.foxy.valorant.wrapper.core.HttpProvider
-import net.cakeyfox.foxy.valorant.wrapper.match.models.MatchInfo
-import net.cakeyfox.foxy.valorant.wrapper.match.models.MatchList
-import net.cakeyfox.foxy.valorant.wrapper.utils.Endpoints
-import net.cakeyfox.foxy.valorant.wrapper.utils.Utils
+import com.wing4merbr.valorant.wrapper.core.HttpProvider
+import com.wing4merbr.valorant.wrapper.match.models.MatchInfo
+import com.wing4merbr.valorant.wrapper.match.models.MatchList
+import com.wing4merbr.valorant.wrapper.utils.Endpoints
+import com.wing4merbr.valorant.wrapper.utils.Utils
 
 class Match(token: String) {
     private val headers = mapOf("Authorization" to token)

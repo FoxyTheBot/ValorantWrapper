@@ -1,4 +1,4 @@
-package net.cakeyfox.foxy.valorant.wrapper.utils
+package com.wing4merbr.valorant.wrapper.utils
 
 object Endpoints {
 

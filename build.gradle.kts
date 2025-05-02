@@ -4,7 +4,7 @@ plugins {
     `maven-publish`
 }
 
-group = "net.cakeyfox"
+group = "com.wing4merbr"
 version = "1.0.0"
 
 repositories {

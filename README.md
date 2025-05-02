@@ -15,7 +15,7 @@ repositories {
 }
 
 dependencies {
-    implementation("com.github.FoxyTheBot:ValorantWrapper:VERSION")
+    implementation("com.github.WinG4merBR:ValorantWrapper:VERSION")
 }
 ```
 

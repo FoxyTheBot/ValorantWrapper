@@ -1,7 +1,7 @@
-package net.cakeyfox.foxy.valorant.wrapper.match.models
+package com.wing4merbr.valorant.wrapper.match.models
 
 @kotlinx.serialization.Serializable
-data class MapInfo(
+data class Queue(
     val id: String,
     val name: String
 )

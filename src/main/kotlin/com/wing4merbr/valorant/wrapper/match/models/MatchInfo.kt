@@ -1,7 +1,7 @@
-package net.cakeyfox.foxy.valorant.wrapper.match.models
+package com.wing4merbr.valorant.wrapper.match.models
 
+import com.wing4merbr.valorant.wrapper.user.models.Tier
 import kotlinx.serialization.SerialName
-import net.cakeyfox.foxy.valorant.wrapper.user.models.Tier
 
 @kotlinx.serialization.Serializable
 data class MatchInfo(

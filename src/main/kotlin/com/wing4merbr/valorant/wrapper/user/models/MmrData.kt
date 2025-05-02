@@ -1,7 +1,7 @@
-package net.cakeyfox.foxy.valorant.wrapper.user.models
+package com.wing4merbr.valorant.wrapper.user.models
 
+import com.wing4merbr.valorant.wrapper.match.models.Season
 import kotlinx.serialization.SerialName
-import net.cakeyfox.foxy.valorant.wrapper.match.models.Season
 
 @kotlinx.serialization.Serializable
 data class MmrData(

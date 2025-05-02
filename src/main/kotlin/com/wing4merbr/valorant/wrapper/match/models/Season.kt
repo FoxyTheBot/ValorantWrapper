@@ -1,4 +1,4 @@
-package net.cakeyfox.foxy.valorant.wrapper.match.models
+package com.wing4merbr.valorant.wrapper.match.models
 
 @kotlinx.serialization.Serializable
 data class Season(

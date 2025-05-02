@@ -1,5 +1,8 @@
-package net.cakeyfox.foxy.valorant.wrapper.core
+package com.wing4merbr.valorant.wrapper.core
 
+import com.wing4merbr.valorant.wrapper.utils.ApiError
+import com.wing4merbr.valorant.wrapper.utils.ApiErrorResponse
+import com.wing4merbr.valorant.wrapper.utils.ApiException
 import io.ktor.client.*
 import io.ktor.client.call.*
 import io.ktor.client.engine.cio.*
@@ -8,9 +11,6 @@ import io.ktor.client.request.*
 import io.ktor.client.statement.*
 import io.ktor.serialization.kotlinx.json.*
 import kotlinx.serialization.json.Json
-import net.cakeyfox.foxy.valorant.wrapper.utils.ApiError
-import net.cakeyfox.foxy.valorant.wrapper.utils.ApiErrorResponse
-import net.cakeyfox.foxy.valorant.wrapper.utils.ApiException
 
 object HttpProvider {
     val client = HttpClient(CIO) {
@@ -36,9 +36,9 @@ object HttpProvider {
         urlParams: Map<String, String> = emptyMap(),
         headers: Map<String, String> = emptyMap()
     ): T {
-        val updatedUrl = replaceUrlParams(url, urlParams)
+        val updatedUrl = HttpProvider.replaceUrlParams(url, urlParams)
 
-        val response = client.get(updatedUrl) {
+        val response = HttpProvider.client.get(updatedUrl) {
             headers.forEach { (key, value) ->
                 header(key, value)
             }
@@ -61,6 +61,6 @@ object HttpProvider {
     }
 
     fun close() {
-        client.close()
+        com.wing4merbr.valorant.wrapper.core.HttpProvider.client.close()
     }
 }
