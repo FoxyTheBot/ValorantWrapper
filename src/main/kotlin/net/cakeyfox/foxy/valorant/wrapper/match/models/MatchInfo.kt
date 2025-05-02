@@ -10,7 +10,8 @@ data class MatchInfo(
 ) {
     @kotlinx.serialization.Serializable
     data class MatchData(
-        val metadata: Metadata
+        val metadata: Metadata,
+        val players: List<Metadata.PlayerInMatch>? = null
     ) {
         @kotlinx.serialization.Serializable
         data class Metadata(
@@ -26,7 +27,7 @@ data class MatchInfo(
             val queue: Queue,
             val season: Season,
             val platform: String,
-            val players: List<PlayerInMatch>
+            val players: List<PlayerInMatch>? = null
         ) {
 
             @kotlinx.serialization.Serializable
@@ -40,21 +41,21 @@ data class MatchInfo(
                 val agent: Agent,
                 val stats: Stats,
                 @SerialName("ability_casts")
-                val abilityCasts: AbilityCasts,
+                val abilityCasts: AbilityCasts? = null,
                 val tier: Tier
             ) {
                 @kotlinx.serialization.Serializable
                 data class AbilityCasts(
-                    val grenade: Int,
+                    val grenade: Int? = 0,
                     @SerialName("ability_1")
-                    val abilityOne: Int,
+                    val abilityOne: Int? = 0,
                     @SerialName("ability_2")
-                    val abilityTwo: Int,
-                    val ultimate: Int
+                    val abilityTwo: Int? = 0,
+                    val ultimate: Int? = 0
                 )
                 @kotlinx.serialization.Serializable
                 data class Stats(
-                    val score: Int,
+                    val score: Int? = 0,
                     val kills: Int,
                     val deaths: Int,
                     val assists: Int,
