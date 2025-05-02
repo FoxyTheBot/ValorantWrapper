@@ -36,9 +36,9 @@ object HttpProvider {
         urlParams: Map<String, String> = emptyMap(),
         headers: Map<String, String> = emptyMap()
     ): T {
-        val updatedUrl = HttpProvider.replaceUrlParams(url, urlParams)
+        val updatedUrl = replaceUrlParams(url, urlParams)
 
-        val response = HttpProvider.client.get(updatedUrl) {
+        val response = client.get(updatedUrl) {
             headers.forEach { (key, value) ->
                 header(key, value)
             }
@@ -61,6 +61,6 @@ object HttpProvider {
     }
 
     fun close() {
-        com.wing4merbr.valorant.wrapper.core.HttpProvider.client.close()
+        client.close()
     }
 }
