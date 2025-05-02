@@ -2,6 +2,13 @@
 
 A simple [Unofficial VALORANT API](https://github.com/Henrik-3/unofficial-valorant-api) wrapper written in Kotlin
 
+<div align="center">
+
+[![](https://jitpack.io/v/WinG4merBR/ValorantWrapper.svg)](https://jitpack.io/#WinG4merBR/ValorantWrapper)
+
+</div>
+
+
 ## ❓ Can I use?
 Yes, you can use this wrapper! Just follow the installation instructions.
 
